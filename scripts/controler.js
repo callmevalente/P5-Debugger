@@ -29,6 +29,7 @@ function onNewClick() {
 
     document.getElementById('contactEditArea').style.display = 'block';
     document.getElementById('contactListArea').style.display = 'none';
+    document.getElementById('ringtoneRadio0').checked = true
 
     document.getElementById('saveBtn').onclick = function () { onFormSave() };
 }
@@ -132,7 +133,6 @@ function clearInputForm() {
     form.phoneNumberEdit.value = '';
     form.phoneNumberTypeSelect.selectedIndex = 0;
     form.ageEdit.value = '';
-    document.getElementById('ringtoneRadio0').checked = true
 
     // Reset all validation errors
     document.getElementById('nameError').innerHTML = '';
